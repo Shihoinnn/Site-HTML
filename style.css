@@ -184,7 +184,7 @@ color:#ddd;
 /* IMAGEM DOS AUTORES */
 
 .autor-img{
-width:90px;
+width:900px;
 height:90px;
 object-fit:cover;
 border-radius:50%;
@@ -201,6 +201,7 @@ display:block;
 margin:10px auto;
 border-radius:5px;
 }
+
 
 
 
