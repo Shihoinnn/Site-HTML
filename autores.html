@@ -4,17 +4,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Autores</title>
+
 <link rel="stylesheet" href="style.css">
 
 <script>
 function mostrarImagem(id){
-  const img = document.getElementById(id);
+const img = document.getElementById(id);
 
-  if(img.style.display === "block"){
-    img.style.display = "none";
-  } else {
-    img.style.display = "block";
-  }
+if(img.style.display === "block"){
+img.style.display = "none";
+}else{
+img.style.display = "block";
+}
 }
 </script>
 
@@ -23,11 +24,12 @@ function mostrarImagem(id){
 <body>
 
 <header class="main-head">
+
 <nav>
 
 <h1 id="logo">Biblioteca</h1>
 
-<ul class="nav-links">
+<ul>
 <li><a href="index.html">Início</a></li>
 <li><a href="livros.html">Livros</a></li>
 <li><a href="autores.html">Autores</a></li>
@@ -35,15 +37,19 @@ function mostrarImagem(id){
 </ul>
 
 </nav>
+
 </header>
 
-<section class="autores">
+
+<section class="livros">
 
 <h2>Autores Famosos</h2>
 
-<div class="autor">
+
+<div class="livro">
 
 <h3>Machado de Assis</h3>
+
 <p>Um dos maiores escritores brasileiros.</p>
 
 <button onclick="mostrarImagem('machado')">Ver mais</button>
@@ -56,11 +62,11 @@ style="display:none; width:200px;">
 
 </div>
 
-<br><br>
 
-<div class="autor">
+<div class="livro">
 
 <h3>Antoine de Saint-Exupéry</h3>
+
 <p>Autor de O Pequeno Príncipe.</p>
 
 <button onclick="mostrarImagem('exupery')">Ver mais</button>
@@ -69,6 +75,40 @@ style="display:none; width:200px;">
 
 <img id="exupery"
 src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Antoine_de_Saint-Exupery_1933.jpg/320px-Antoine_de_Saint-Exupery_1933.jpg"
+style="display:none; width:200px;">
+
+</div>
+
+
+<div class="livro">
+
+<h3>J. K. Rowling</h3>
+
+<p>Criadora da saga Harry Potter.</p>
+
+<button onclick="mostrarImagem('rowling')">Ver mais</button>
+
+<br><br>
+
+<img id="rowling"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/320px-J._K._Rowling_2010.jpg"
+style="display:none; width:200px;">
+
+</div>
+
+
+<div class="livro">
+
+<h3>J. R. R. Tolkien</h3>
+
+<p>Criador de O Senhor dos Anéis.</p>
+
+<button onclick="mostrarImagem('tolkien')">Ver mais</button>
+
+<br><br>
+
+<img id="tolkien"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Tolkien_1916.jpg/320px-Tolkien_1916.jpg"
 style="display:none; width:200px;">
 
 </div>
