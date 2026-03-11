@@ -213,7 +213,7 @@ display:none;
 
 /* IMAGEM DOS LIVROS */
 
-.livros-img{
+.livro-img{
 width:90px;
 height:90px;
 object-fit:cover;
@@ -226,5 +226,6 @@ margin:10px auto;
 display:none;
 }
 }
+
 
 
