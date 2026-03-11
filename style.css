@@ -171,3 +171,26 @@ padding:8px;
 margin:5px 0;
 border-radius:5px;
 }
+
+/* ESCONDER TEXTO EXTRA */
+
+.extra{
+display:none;
+margin-top:10px;
+font-size:14px;
+color:#ddd;
+}
+
+.card button{
+margin-top:10px;
+background:#4da6ff;
+border:none;
+padding:6px 10px;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+.card button:hover{
+background:#2d8cff;
+}
