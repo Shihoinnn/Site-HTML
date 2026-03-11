@@ -124,3 +124,30 @@ margin-bottom:10px;
 font-size:20px;
 color:#ddd;
 }
+
+/* ANIMAÇÃO DOS CARDS */
+
+@keyframes aparecer {
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.card{
+animation:aparecer 0.8s ease;
+}
+
+/* ANIMAÇÃO DO BANNER */
+
+.banner-content{
+animation:aparecer 1.2s ease;
+}
+
