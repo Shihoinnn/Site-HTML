@@ -25,21 +25,45 @@
 <div class="card">
 <h3>Machado de Assis</h3>
 <p>Grande escritor brasileiro.</p>
+
+<div class="extra">
+<p>Machado de Assis foi um dos maiores autores da literatura brasileira, fundador da Academia Brasileira de Letras e autor de obras como Dom Casmurro e Memórias Póstumas de Brás Cubas.</p>
+</div>
+
+<button onclick="toggleInfo(this)">Ver mais</button>
 </div>
 
 <div class="card">
 <h3>Antoine de Saint-Exupéry</h3>
 <p>Autor de O Pequeno Príncipe.</p>
+
+<div class="extra">
+<p>Escritor e aviador francês conhecido principalmente por O Pequeno Príncipe, uma obra que mistura filosofia, poesia e reflexão sobre a vida.</p>
+</div>
+
+<button onclick="toggleInfo(this)">Ver mais</button>
 </div>
 
 <div class="card">
 <h3>Joanne Rowling</h3>
 <p>Criadora de Harry Potter.</p>
+
+<div class="extra">
+<p>J.K. Rowling é uma escritora britânica famosa pela série Harry Potter, que se tornou um fenômeno mundial com livros, filmes e produtos.</p>
+</div>
+
+<button onclick="toggleInfo(this)">Ver mais</button>
 </div>
 
 <div class="card">
-<h3>John RonaldTolkein</h3>
+<h3>John Ronald Reuel Tolkien</h3>
 <p>Criador do universo Senhor dos Anéis.</p>
+
+<div class="extra">
+<p>J.R.R. Tolkien foi um escritor e professor britânico que criou o universo da Terra-média, presente em O Senhor dos Anéis e O Hobbit.</p>
+</div>
+
+<button onclick="toggleInfo(this)">Ver mais</button>
 </div>
 
 </div>
@@ -49,6 +73,25 @@
 <footer>
 <p>📚 Biblioteca Virtual</p>
 </footer>
+
+<script>
+
+function toggleInfo(botao){
+
+const card = botao.parentElement;
+const extra = card.querySelector(".extra");
+
+if(extra.style.display === "block"){
+extra.style.display = "none";
+botao.textContent = "Ver mais";
+}else{
+extra.style.display = "block";
+botao.textContent = "Ver menos";
+}
+
+}
+
+</script>
 
 </body>
 </html>
