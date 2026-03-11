@@ -45,3 +45,22 @@
 </div>
 
 </div>
+
+<script>
+
+function toggleInfo(botao){
+
+const card = botao.parentElement;
+const extra = card.querySelector(".extra");
+
+if(extra.style.display === "block"){
+extra.style.display = "none";
+botao.textContent = "Ver mais";
+}else{
+extra.style.display = "block";
+botao.textContent = "Ver menos";
+}
+
+}
+
+</script>
