@@ -4,18 +4,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Autores</title>
-
 <link rel="stylesheet" href="style.css">
 
 <script>
 function mostrarImagem(id){
-const img = document.getElementById(id);
+  const img = document.getElementById(id);
 
-if(img.style.display === "block"){
-img.style.display = "none";
-}else{
-img.style.display = "block";
-}
+  if(img.style.display === "block"){
+    img.style.display = "none";
+  } else {
+    img.style.display = "block";
+  }
 }
 </script>
 
@@ -24,12 +23,11 @@ img.style.display = "block";
 <body>
 
 <header class="main-head">
-
 <nav>
 
 <h1 id="logo">Biblioteca</h1>
 
-<ul>
+<ul class="nav-links">
 <li><a href="index.html">Início</a></li>
 <li><a href="livros.html">Livros</a></li>
 <li><a href="autores.html">Autores</a></li>
@@ -37,14 +35,13 @@ img.style.display = "block";
 </ul>
 
 </nav>
-
 </header>
 
-<main style="padding:40px;">
+<section class="autores">
 
 <h2>Autores Famosos</h2>
 
-<br>
+<div class="autor">
 
 <h3>Machado de Assis</h3>
 <p>Um dos maiores escritores brasileiros.</p>
@@ -53,10 +50,15 @@ img.style.display = "block";
 
 <br><br>
 
-<img id="machado" width="200" style="display:none"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Machado_de_Assis_real.jpg/320px-Machado_de_Assis_real.jpg">
+<img id="machado"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Machado_de_Assis_real.jpg/320px-Machado_de_Assis_real.jpg"
+style="display:none; width:200px;">
+
+</div>
 
 <br><br>
+
+<div class="autor">
 
 <h3>Antoine de Saint-Exupéry</h3>
 <p>Autor de O Pequeno Príncipe.</p>
@@ -65,34 +67,13 @@ src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Machado_de_Assis_
 
 <br><br>
 
-<img id="exupery" width="200" style="display:none"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Antoine_de_Saint-Exupery_1933.jpg/320px-Antoine_de_Saint-Exupery_1933.jpg">
+<img id="exupery"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Antoine_de_Saint-Exupery_1933.jpg/320px-Antoine_de_Saint-Exupery_1933.jpg"
+style="display:none; width:200px;">
 
-<br><br>
+</div>
 
-<h3>J.K. Rowling</h3>
-<p>Criadora da saga Harry Potter.</p>
-
-<button onclick="mostrarImagem('rowling')">Ver mais</button>
-
-<br><br>
-
-<img id="rowling" width="200" style="display:none"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/320px-J._K._Rowling_2010.jpg">
-
-<br><br>
-
-<h3>J.R.R. Tolkien</h3>
-<p>Criador do universo de O Senhor dos Anéis.</p>
-
-<button onclick="mostrarImagem('tolkien')">Ver mais</button>
-
-<br><br>
-
-<img id="tolkien" width="200" style="display:none"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Tolkien_1916.jpg/320px-Tolkien_1916.jpg">
-
-</main>
+</section>
 
 </body>
 </html>
