@@ -151,3 +151,23 @@ animation:aparecer 0.8s ease;
 animation:aparecer 1.2s ease;
 }
 
+/* CHAT DO CONTATO */
+
+.chat-box{
+width:300px;
+height:200px;
+background:#1f1f1f;
+margin:20px auto;
+padding:10px;
+border-radius:8px;
+overflow-y:auto;
+text-align:left;
+}
+
+.message{
+background:#4da6ff;
+color:white;
+padding:8px;
+margin:5px 0;
+border-radius:5px;
+}
