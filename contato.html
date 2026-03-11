@@ -6,9 +6,9 @@
 <title>Contato</title>
 <link rel="stylesheet" href="style.css">
 
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
-
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  
 </head>
 
 <body>
@@ -75,7 +75,7 @@ const mensagem = document.getElementById("mensagem").value;
 db.collection("mensagens").add({
 nome: nome,
 mensagem: mensagem,
-data: new Date()
+data: firebase.firestore.FieldValue.serverTimestamp()
 });
 
 form.reset();
@@ -107,4 +107,5 @@ chat.appendChild(msg);
 
 </body>
 </html>
+
 
