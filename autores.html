@@ -5,32 +5,16 @@
 <meta charset="UTF-8">
 <title>Autores</title>
 
-<style>
-body{
-font-family: Arial;
-margin: 40px;
-}
-
-nav a{
-margin-right:15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-img{
-margin-top:10px;
-display:none;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 <script>
 function mostrarImagem(id){
-var img = document.getElementById(id);
+const img = document.getElementById(id);
 
-if(img.style.display === "none"){
-img.style.display = "block";
-}else{
+if(img.style.display === "block"){
 img.style.display = "none";
+}else{
+img.style.display = "block";
 }
 }
 </script>
@@ -39,75 +23,76 @@ img.style.display = "none";
 
 <body>
 
+<header class="main-head">
+
 <nav>
-<a href="index.html">Início</a>
-<a href="livros.html">Livros</a>
-<a href="autores.html">Autores</a>
-<a href="contato.html">Contato</a>
+
+<h1 id="logo">Biblioteca</h1>
+
+<ul>
+<li><a href="index.html">Início</a></li>
+<li><a href="livros.html">Livros</a></li>
+<li><a href="autores.html">Autores</a></li>
+<li><a href="contato.html">Contato</a></li>
+</ul>
+
 </nav>
+
+</header>
+
+<main style="padding:40px;">
 
 <h2>Autores Famosos</h2>
 
+<br>
+
 <h3>Machado de Assis</h3>
-<p>Grande escritor brasileiro.</p>
-<p>
-Machado de Assis foi um dos maiores autores da literatura brasileira, fundador da Academia Brasileira de Letras e autor de obras como Dom Casmurro e Memórias Póstumas de Brás Cubas.
-</p>
+<p>Um dos maiores escritores brasileiros.</p>
 
 <button onclick="mostrarImagem('machado')">Ver mais</button>
 
-<br>
-<img id="machado" width="200"
-src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Machado_de_Assis_real.jpg">
+<br><br>
 
-<hr>
+<img id="machado" width="200" style="display:none"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Machado_de_Assis_real.jpg/320px-Machado_de_Assis_real.jpg">
+
+<br><br>
 
 <h3>Antoine de Saint-Exupéry</h3>
 <p>Autor de O Pequeno Príncipe.</p>
 
-<p>
-Escritor e aviador francês conhecido principalmente por O Pequeno Príncipe, uma obra que mistura filosofia, poesia e reflexão sobre a vida.
-</p>
-
 <button onclick="mostrarImagem('exupery')">Ver mais</button>
 
-<br>
-<img id="exupery" width="200"
-src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Antoine_de_Saint-Exupery_1933.jpg">
+<br><br>
 
-<hr>
+<img id="exupery" width="200" style="display:none"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Antoine_de_Saint-Exupery_1933.jpg/320px-Antoine_de_Saint-Exupery_1933.jpg">
 
-<h3>Joanne Rowling</h3>
-<p>Criadora de Harry Potter.</p>
+<br><br>
 
-<p>
-J.K. Rowling é uma escritora britânica famosa pela série Harry Potter, que se tornou um fenômeno mundial com livros, filmes e produtos.
-</p>
+<h3>J.K. Rowling</h3>
+<p>Criadora da saga Harry Potter.</p>
 
 <button onclick="mostrarImagem('rowling')">Ver mais</button>
 
-<br>
-<img id="rowling" width="200"
-src="https://upload.wikimedia.org/wikipedia/commons/5/5d/J._K._Rowling_2010.jpg">
+<br><br>
 
-<hr>
+<img id="rowling" width="200" style="display:none"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/320px-J._K._Rowling_2010.jpg">
 
-<h3>John Ronald Reuel Tolkien</h3>
-<p>Criador do universo Senhor dos Anéis.</p>
+<br><br>
 
-<p>
-J.R.R. Tolkien foi um escritor e professor britânico que criou o universo da Terra-média, presente em O Senhor dos Anéis e O Hobbit.
-</p>
+<h3>J.R.R. Tolkien</h3>
+<p>Criador do universo de O Senhor dos Anéis.</p>
 
 <button onclick="mostrarImagem('tolkien')">Ver mais</button>
 
-<br>
-<img id="tolkien" width="200"
-src="https://upload.wikimedia.org/wikipedia/commons/6/66/Tolkien_1916.jpg">
+<br><br>
 
-<footer>
-<h3>Biblioteca Virtual</h3>
-</footer>
+<img id="tolkien" width="200" style="display:none"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Tolkien_1916.jpg/320px-Tolkien_1916.jpg">
+
+</main>
 
 </body>
 </html>
