@@ -184,7 +184,7 @@ color:#ddd;
 /* IMAGEM DOS AUTORES */
 
 .autor-img{
-width:900px;
+width:90px;
 height:90px;
 object-fit:cover;
 border-radius:50%;
@@ -195,12 +195,14 @@ margin:10px auto;
 /* IMAGEM DOS LIVROS */
 
 .livro-img{
-width:120px;
-height:auto;
+width:90px;
+height:90px;
+object-fit:cover;
+border-radius:50%;
 display:block;
 margin:10px auto;
-border-radius:5px;
 }
+
 
 
 
