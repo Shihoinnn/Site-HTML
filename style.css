@@ -181,21 +181,6 @@ font-size:14px;
 color:#ddd;
 }
 
-.card button{
-margin-top:10px;
-background:#4da6ff;
-border:none;
-padding:6px 10px;
-color:white;
-border-radius:5px;
-cursor:pointer;
-}
-
-.card button:hover{
-background:#2d8cff;
-}
-
-
 /* IMAGEM DOS AUTORES */
 
 .autor-img{
@@ -207,24 +192,15 @@ display:block;
 margin:10px auto;
 }
 
-.extra{
-display:none;
-
-
 /* IMAGEM DOS LIVROS */
 
 .livro-img{
-width:90px;
-height:90px;
+width:120px;
+height:160px;
 object-fit:cover;
-border-radius:50%;
+border-radius:5px;
 display:block;
 margin:10px auto;
-}
-
-.extra{
-display:none;
-}
 }
 
 
