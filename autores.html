@@ -4,116 +4,110 @@
 <head>
 <meta charset="UTF-8">
 <title>Autores</title>
-
 <link rel="stylesheet" href="style.css">
-
-<script>
-function mostrarImagem(id){
-const img = document.getElementById(id);
-
-if(img.style.display === "block"){
-img.style.display = "none";
-}else{
-img.style.display = "block";
-}
-}
-</script>
-
 </head>
 
 <body>
 
-<header class="main-head">
-
 <nav>
-
-<h1 id="logo">Biblioteca</h1>
-
-<ul>
-<li><a href="index.html">Início</a></li>
-<li><a href="livros.html">Livros</a></li>
-<li><a href="autores.html">Autores</a></li>
-<li><a href="contato.html">Contato</a></li>
-</ul>
-
+<a href="index.html">Início</a>
+<a href="livros.html">Livros</a>
+<a href="autores.html">Autores</a>
+<a href="contato.html">Contato</a>
 </nav>
 
-</header>
-
-
-<section class="livros">
+<section>
 
 <h2>Autores Famosos</h2>
 
+<div class="container">
 
-<div class="livro">
-
+<div class="card">
 <h3>Machado de Assis</h3>
+<p>Grande escritor brasileiro.</p>
 
-<p>Um dos maiores escritores brasileiros.</p>
-
-<button onclick="mostrarImagem('machado')">Ver mais</button>
-
-<br><br>
-
-<img id="machado"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Machado_de_Assis_real.jpg/320px-Machado_de_Assis_real.jpg"
-style="display:none; width:200px;">
-
+<div class="extra">
+<p>
+Machado de Assis foi um dos maiores nomes da literatura brasileira.
+Autor de obras como Dom Casmurro e Memórias Póstumas de Brás Cubas,
+é considerado um dos fundadores da Academia Brasileira de Letras.
+</p>
 </div>
 
+<button onclick="toggleInfo(this)">Ver mais</button>
+</div>
 
-<div class="livro">
-
+<div class="card">
 <h3>Antoine de Saint-Exupéry</h3>
-
 <p>Autor de O Pequeno Príncipe.</p>
 
-<button onclick="mostrarImagem('exupery')">Ver mais</button>
-
-<br><br>
-
-<img id="exupery"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Antoine_de_Saint-Exupery_1933.jpg/320px-Antoine_de_Saint-Exupery_1933.jpg"
-style="display:none; width:200px;">
-
+<div class="extra">
+<p>
+Escritor e aviador francês conhecido mundialmente
+pela obra O Pequeno Príncipe, um livro que mistura
+fantasia, filosofia e reflexões sobre amizade.
+</p>
 </div>
 
-
-<div class="livro">
-
-<h3>J. K. Rowling</h3>
-
-<p>Criadora da saga Harry Potter.</p>
-
-<button onclick="mostrarImagem('rowling')">Ver mais</button>
-
-<br><br>
-
-<img id="rowling"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/320px-J._K._Rowling_2010.jpg"
-style="display:none; width:200px;">
-
+<button onclick="toggleInfo(this)">Ver mais</button>
 </div>
 
+<div class="card">
+<h3>J.K. Rowling</h3>
+<p>Criadora de Harry Potter.</p>
 
-<div class="livro">
+<div class="extra">
+<p>
+Escritora britânica responsável pela famosa
+saga Harry Potter, uma das séries literárias
+mais vendidas da história.
+</p>
+</div>
 
-<h3>J. R. R. Tolkien</h3>
+<button onclick="toggleInfo(this)">Ver mais</button>
+</div>
 
-<p>Criador de O Senhor dos Anéis.</p>
+<div class="card">
+<h3>J.R.R. Tolkien</h3>
+<p>Criador do universo Senhor dos Anéis.</p>
 
-<button onclick="mostrarImagem('tolkien')">Ver mais</button>
+<div class="extra">
+<p>
+Professor e escritor britânico que criou
+o universo da Terra-média, cenário das obras
+O Hobbit e O Senhor dos Anéis.
+</p>
+</div>
 
-<br><br>
-
-<img id="tolkien"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Tolkien_1916.jpg/320px-Tolkien_1916.jpg"
-style="display:none; width:200px;">
+<button onclick="toggleInfo(this)">Ver mais</button>
+</div>
 
 </div>
 
 </section>
+
+<footer>
+<p>📚 Biblioteca Virtual</p>
+</footer>
+
+<script>
+
+function toggleInfo(botao){
+
+const card = botao.parentElement;
+const extra = card.querySelector(".extra");
+
+if(extra.style.display === "block"){
+extra.style.display = "none";
+botao.textContent = "Ver mais";
+}else{
+extra.style.display = "block";
+botao.textContent = "Ver menos";
+}
+
+}
+
+</script>
 
 </body>
 </html>
