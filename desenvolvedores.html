@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
+<title>Desenvolvedores</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Início</a>
+<a href="jogos.html">Jogos</a>
+<a href="desenvolvedores.html">Desenvolvedores</a>
+<a href="contato.html">Contato</a>
+</nav>
+
+<section>
+
+<h2>Desenvolvedores Famosos</h2>
+
+<div class="container">
+
+<div class="card">
+
+<h3>Mojang Studios</h3>
+
+<img src="mojang.jpg" class="autor-img" alt="Mojang">
+
+<p>Criadora do Minecraft.</p>
+
+<div class="extra">
+<p>
+A Mojang é a desenvolvedora responsável por Minecraft,
+um dos jogos mais vendidos e populares da história.
+</p>    
+</div>
+
+<button onclick="toggleInfo(this)">Ver mais</button>
+
+</div>
+
+<div class="card">
+
+<h3>Rockstar Games</h3>
+
+<img src="rockstar.jpg" class="autor-img" alt="Rockstar Games">
+
+<p>Criadora do GTA V.</p>
+
+<div class="extra">
+<p>
+A Rockstar Games é conhecida por jogos de mundo aberto,
+como o próprio GTA e o famoso Red Dead Redemption.
+</p>
+</div>
+
+<button onclick="toggleInfo(this)">Ver mais</button>
+
+</div>
+
+<div class="card">
+
+<h3>Epic Games</h3>
+
+<img src="epic.jpg" class="autor-img" alt="Epic Games">
+
+<p>Criadora de Fortnite.</p>
+
+<div class="extra">
+<p>
+A Epic Games desenvolveu Fortnite e também é responsável
+pela Unreal Engine, uma das engines mais usadas no mundo.
+</p>
+</div>
+
+<button onclick="toggleInfo(this)">Ver mais</button>
+
+</div>
+
+<div class="card">
+
+<h3>Riot Games</h3>
+
+<img src="riot.jpg" class="autor-img" alt="Riot Games">
+
+<p>Criadora de Valorant.</p>
+
+<div class="extra">
+<p>
+A Riot Games desenvolveu Valorant e League of Legends,
+sendo uma das maiores empresas de jogos competitivos.
+</p>
+</div>
+
+<button onclick="toggleInfo(this)">Ver mais</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>🎮 Biblioteca de Games</p>
+</footer>
+
+<script>
+
+function toggleInfo(botao){
+
+const card = botao.parentElement;
+const extra = card.querySelector(".extra");
+
+if(extra.style.display === "block"){
+extra.style.display = "none";
+botao.textContent = "Ver mais";
+}else{
+extra.style.display = "block";
+botao.textContent = "Ver menos";
+}
+
+}
+
+</script>
+
+</body>
+</html>

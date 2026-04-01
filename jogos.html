@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
+<title>Jogos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Início</a>
+<a href="jogos.html">Jogos</a>
+<a href="desenvolvedores.html">Desenvolvedores</a>
+<a href="contato.html">Contato</a>
+</nav>
+
+<section>
+
+<h2>Jogos Famosos</h2>
+
+<div class="container">
+
+<div class="card">
+<h3>Minecraft</h3>
+<p>Um dos jogos mais populares do mundo.</p>
+
+<img src="minecraft.jpg" class="livro-img" alt="Minecraft">
+
+<div class="extra">
+<p>Desenvolvido pela Mojang, é um jogo de construção e sobrevivência em mundo aberto.</p>
+</div>
+
+<button onclick="toggleInfo(this)">Ver mais</button>
+</div>
+
+<div class="card">
+<h3>Grand Theft Auto V</h3>
+<p>Um jogo de ação e mundo aberto.</p>
+
+<img src="gta.jpg" class="livro-img" alt="GTA V">
+
+<div class="extra">
+<p>Desenvolvido pela Rockstar Games, acompanha a história de três criminosos em Los Santos.</p>
+</div>
+
+<button onclick="toggleInfo(this)">Ver mais</button>
+</div>
+
+<div class="card">
+<h3>Fortnite</h3>
+<p>Um dos battle royales mais famosos.</p>
+
+<img src="fortnite.jpg" class="livro-img" alt="Fortnite">
+
+<div class="extra">
+<p>Desenvolvido pela Epic Games, mistura construção com combate em partidas online.</p>
+</div>
+
+<button onclick="toggleInfo(this)">Ver mais</button>
+</div>
+
+<div class="card">
+<h3>Valorant</h3>
+<p>Um jogo de tiro tático competitivo.</p>
+
+<img src="valorant.jpg" class="livro-img" alt="Valorant">
+
+<div class="extra">
+<p>Desenvolvido pela Riot Games, é um FPS tático que combina habilidade de tiro com poderes únicos dos agentes.</p>
+</div>
+
+<button onclick="toggleInfo(this)">Ver mais</button>
+</div>
+
+<button onclick="toggleInfo(this)">Ver mais</button>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>🎮 Biblioteca de Games</p>
+</footer>
+
+<script>
+
+function toggleInfo(botao){
+
+const card = botao.parentElement;
+const extra = card.querySelector(".extra");
+
+if(extra.style.display === "block"){
+extra.style.display = "none";
+botao.textContent = "Ver mais";
+}else{
+extra.style.display = "block";
+botao.textContent = "Ver menos";
+}
+
+}
+
+</script>
+
+</body>
+</html>
